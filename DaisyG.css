@@ -12,17 +12,17 @@
 		'menu     menu     menu'
 		'maintext maintext maintext'
 		'.    center    mouse';
-    grid-template-columns:44vw 12vw 44vw;	
+    grid-template-columns:44vw 12vw 44vw;
 }
 
 .logo{
-	background: url("LogoR.png");
+	background: url("pic/LogoR.png");
 	background-size:cover;
 	height:100vh;
 	grid-template-rows:20vh 30vh 50vh;
 }
 .logo1{
-	background: url("CityFon.png");
+	background: url("pic/CityFon.png");
 	background-size:cover;
 	height:80vh;
 	grid-template-rows:20vh 30vh 30vh;
@@ -41,7 +41,7 @@
 
 
 .logoimg{
-	background-image:url("LogoR.png");
+	background-image:url("pic/LogoR.png");
 	background-size:100% 100%;
 }
 
@@ -101,12 +101,12 @@
 	align-items: flex-start;
 	align-self:center;
 	align-self:end;
-	white-space:nowrap;	
+	white-space:nowrap;
 }
 
 .text1{
 	display:flex;
-	flex-direction:column; 
+	flex-direction:column;
 	align-items: center;
 	justify-content:center;
 }
@@ -118,12 +118,12 @@
 
 .text15S{
 	font:2em  Geneva, Arial, Helvetica, sans-serif;
-	
+
 }
 
 .text2S{
 	font:1.2em  Geneva, Arial, Helvetica, sans-serif;
-	
+
 }
 
 .rectangle{
@@ -138,7 +138,7 @@
 	justify-self:center;
 	width:12vw;
 	display:flex;
-	flex-direction:column; 
+	flex-direction:column;
 	justify-content:space-between;
 	align-items:center;
 }
@@ -190,7 +190,7 @@
 
 .j_c_c{justify-content:center;}
 
-justify-content
+
 .fontZag{font:2em  Geneva, Arial, Helvetica, sans-serif;}
 
 .said2{
@@ -208,7 +208,7 @@ justify-content
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-	padding-top:5%;  
+	padding-top:5%;
 }
 
 .greyFon{background:#e0e0e0;}
@@ -256,7 +256,7 @@ justify-content
 	display:grid;
 	justify-items:stretch;
 	align-items:stretch;
-	padding-top:5%; 
+	padding-top:5%;
 	margin:0 13%;
 	grid-template:
 		'menu2 menu2' auto
@@ -265,7 +265,7 @@ justify-content
 		'center center' auto
 		/ 50% 50%;
 		grid-gap:2%;
-		
+
 }
 
 .menu2{
