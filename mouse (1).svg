@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 345" width="120" height="345">
+	<defs>
+		<image width="73" height="329" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAAFJCAMAAADg2vBaAAAAAXNSR0IB2cksfwAAAMxQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////QQSP0wAAAER0Uk5TLf/SAPHmzYsPHDM1VbpwHg5RmeliAwkLhAye5Us7WDTiWSbhYCdAPRFhwgK4HwqY4CxnbBQg3SLb8N8+wAcVBFfFQT92+AK8AAABkUlEQVR4nO3SR08CURhGYfCKgA3sCCLYCypiw17//38SE6PRBZ6EbzEx51kwC5I3M/eeXC6fz4+llP58jhcmimmI3LA/fyiVJ6cGj+mZ2cqIS5+qc/MLiyFLA0vLg5+ViKUP1UJtNWYpVeqNtZillJrNqKVfRlxa//7CEZda7Y2gpbS5tR20lHZ2o5a+ZGtprxa1tN9oBS2lg8Oopc7RcdZOPKNLJ92wdzrtRS3Vz6KWzrtRSxeXmbu7bC5dhS3l//VSP4N3l8Ule2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsibEnxp4Ye2LsCelcRy2VbqKW+rdRS3f3YSf+kL27C1t6LEct1YpBS0/tXtDS80vUOb2+pfQOJ2IwUFiWYjQAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.2;fill: #ffffff } 
+	</style>
+	<g id="Гл экран">
+		<g id="mouse">
+			<use id="Прямоугольник, скругл. углы 2" style="opacity: 0.2" href="#img1" x="47" y="16" />
+			<path id="Forma 1" class="shp0" d="M0.01 15.55C0.01 23.72 4.03 31.99 11.72 31.99L31.31 31.99C39.96 31.99 47 24.82 47 15.99C47 7.17 39.96 -0.01 31.31 -0.01L11.72 -0.01C3.67 -0.01 0.01 8.06 0.01 15.55ZM2.96 15.55C2.96 9.31 5.67 3.01 11.72 3.01L19.09 3.01C23.2 13.98 20.1 25.63 19.04 28.98L11.72 28.98C6.03 28.98 2.96 22.06 2.96 15.55ZM44.04 15.99C44.04 23.16 38.33 28.98 31.31 28.98L22.14 28.98C22.94 26.29 24.15 21.23 24.15 15.25C24.15 11.41 23.65 7.21 22.23 3.01L31.31 3.01C38.33 3.01 44.04 8.83 44.04 15.99ZM17.09 17.31L6.38 17.31C5.57 17.31 4.91 16.64 4.91 15.81C4.91 14.97 5.57 14.3 6.38 14.3L17.09 14.3C17.91 14.3 18.57 14.97 18.57 15.81C18.57 16.64 17.91 17.31 17.09 17.31Z" />
+		</g>
+	</g>
+</svg>

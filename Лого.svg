@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139 68" width="139" height="68">
+	<defs>
+		<image width="59" height="68" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAABECAMAAAAIj72VAAAAAXNSR0IB2cksfwAAASxQTFRF/GJe/GJe+2Re+2Rf+2Ne/GJe/GJe+2Rf+2Rf/GJe/GJe+2Ne+2Ne/GNe/GNe+2Re+2Rf+2Rf+2Re/GNe/GJe+2Ne+2Ne+2Ne+2Ne/GJe+2Rf+2Rf/GJe/GNe+2Ne+2Rf+2Rf+2Ne/GNe/GNe+2Re+2Ne+2Ne+2Re/GNe/GJe+2Ne+2Ne+2Ne+2Ne/GJe+2Rf+2Rf/GJe/GNe+2Ne+2Rf+2Rf+2Ne/GNe/GJe+2Re+2Ne+2Ne+2Re/GJe+2Ne+2Ne+2Rf+2Ne/GJe+2Rf+2Rf/GJe/GNe+2Ne+2Rf+2Rf+2Ne/GNe/GJe+2Re+2Ne+2Ne+2Ne/GJe/GJe+2Rf+2Ne+2Rf+2Ne+2Rf+2Ne+2Ne+2Ne+2Re+2Ne+2Ne+2Rf+2Ne/GNe+2Rf/GNe+2RfRzWKdwAAAGR0Uk5TAAhyy24HTv/ISzGvrC4ZivLwhhcJaeDdZEnFw0cqov38nygTge3rfhICX9jVXD26tzkknPj2mCEPeenndA1W0s5SOrWyNx2W+feSGwtz5OFvCk/17/Hsz+pgXYKjoMZlGrAvzHZj1g4AAAFGSURBVHic7ddXNwNRFIbhzWBLBEGUIEoiSPTeiSjRRYje/f//wI6yUk4/V9Y67+3MczFX820AflXVXk2t4LmgOg8R630G0t+A3wUaNWVTcxB/a2lt05Ch9g4srrNL+bPD3VheT6+SjPT1V1DEgcGoVMaG4gxJDY+MCmUiOcaR1PiEgE5OCSQ1PcORs3PzEoq4sLjEkMsrq1JJra1vlNPNLSVJpbZLZHpHWVK7e39yP3OgRREPj44L8uT0TFNS59kLgFzKQFKeDy4NKeIVBOUvcYpD3theO+uss8466+y/tzb/UJt/t81msNkqVhvJbptpbsKb0k1Y2KK3SpKxRa02MCXf3mmO/CpxJ9z893xJxR5Mbw0q8si8cZ7kNw4Vfq6gircVMG66F51T9rXolsxr3ZKU/+2HBt41JZUzvp2BbvaPrOhDPwGDboMUHJfu4QAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.txt0 { font-size: 16px;line-height: 36px;fill: #0c252d;font-weight: bold;font-family: "P FEncore Sans Pro" } 
+		.txt1 { font-size: 40px;line-height: 26px;fill: #ffffff;font-weight: bold;font-family: "Gotham Pro";text-anchor: middle } 
+	</style>
+	<g id="Гл экран">
+		<g id="Лого">
+			<use id="Прямоугольник 3" href="#img1" x="0" y="0" />
+			<text id="D" style="transform: matrix(2.287,0,0,2.231,17.333,46.267)" >
+				<tspan x="0" y="0" class="txt0" dx="0" >D</tspan>
+			</text>
+			<text id="Daisy" style="transform: matrix(0.602,0,0,0.602,106.51,42.15)" >
+				<tspan x="0" y="0" class="txt1" dx="0 0 0 0 0" >Daisy</tspan>
+			</text>
+		</g>
+	</g>
+</svg>
