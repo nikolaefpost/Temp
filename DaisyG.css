@@ -1,9 +1,9 @@
 *{
-	margin:0;
+	margin:0; /*pic/Tomothy.png*/
 	padding:0;
 }
 
-.logo, .logo1{
+.logo, .logo1{                    /*s*/
 	display:grid;
 	margin:0;
 	width:100vw;
@@ -15,50 +15,47 @@
     grid-template-columns:44vw 12vw 44vw;
 }
 
-.logo{
+.logo{                                      /*s*/
 	background: url("pic/LogoR.png");
 	background-size:cover;
 	height:100vh;
 	grid-template-rows:20vh 30vh 50vh;
 }
 .logo1{
-	background: url("pic/CityFon.png");
+	background: url("pic/CityFon.png");          /*s*/
 	background-size:cover;
 	height:80vh;
 	grid-template-rows:20vh 30vh 30vh;
 }
 
 #logpic{
-	margin-right:auto;
+	margin-right:auto;                        /*s*/
 }
 
 .mouse{
-	grid-area:mouse;
+	grid-area:mouse;                          /*s*/
 	width:10vw;
 	align-self:start;
 	margin-top:5vh;
 }
 
 
-.logoimg{
-	background-image:url("pic/LogoR.png");
-	background-size:100% 100%;
-}
+
 
 .left{
 	margin: 6% 5vw;
-	transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;      /*s*/
 }
 
 .left:hover{
 	color:#FF8484;
-	border-bottom: 1px solid #FF8484;
+	border-bottom: 1px solid #FF8484;           /*s*/
 	transition: 0.5s ease-in-out;
 	cursor:pointer;
 }
 
 .hr1{
-	width:100px;
+	width:100px;                            /*s*/
 }
 
 .cntr{text-align:center;}
@@ -81,17 +78,17 @@
 .pict{object-fit: cover; object-position: right 10%;}
 .picb{object-fit: cover; object-position: right 90%;}
 
-.z_above{z-index:100;}
+.z_above{z-index:100;}                                    /*s*/
 
 .menu, .menu1 {
 	grid-area:menu;
 	display:flex;
 	align-items: center;
-	margin:0 7vw 0 12vw;
+	margin:0 7vw 0 12vw;                                       /*s*/
 }
 
 .menu {justify-content:flex-end;}
-.menu1{justify-content:center;}
+.menu1{justify-content:center;}                              /*s*/
 
 
 .maintext{
@@ -99,16 +96,15 @@
 	display:flex;
 	justify-content:center;
 	align-items: flex-start;
-	align-self:center;
 	align-self:end;
-	white-space:nowrap;
+	white-space:nowrap;                                /*s*/
 }
 
 .text1{
 	display:flex;
 	flex-direction:column;
 	align-items: center;
-	justify-content:center;
+	justify-content:center;                           /*s*/
 }
 
 .text1S{
@@ -149,7 +145,8 @@
 	margin:auto auto 5vh  auto;
 }
 .redkn{
-	width:10vw;
+
+	max-width: 20vh;
 	height:4vh;
 	grid-area:redkn;
 	border-radius:5%;
@@ -245,7 +242,7 @@
 .redRectX{
 	background:#FF8484;
 	border-radius:3px;
-	width:10vw;
+	max-width:20vw;
 	text-align:center;
 	padding:1.5vmin;
 	font:1.5vmin normal  Geneva, Arial, Helvetica, sans-serif;

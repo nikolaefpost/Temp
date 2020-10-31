@@ -1,0 +1,123 @@
+#logpic {
+  margin-right: auto; }
+
+.cntr {
+  text-align: center; }
+
+.down {
+  margin-bottom: 2vh; }
+
+.five {
+  margin-top: 5%; }
+
+.seven {
+  margin-top: 7%; }
+
+.two {
+  margin-top: 2%; }
+
+.mrL {
+  margin-left: 15px; }
+
+.mrR {
+  margin-right: 15px; }
+
+.mrL5 {
+  margin-left: 5%; }
+
+.mrR5 {
+  margin-right: 5%; }
+
+.mrLtext {
+  margin-left: .5em; }
+
+.pict {
+  object-fit: cover;
+  object-position: right 10%; }
+
+.picb {
+  object-fit: cover;
+  object-position: right 90%; }
+
+.white {
+  color: white; }
+
+.red {
+  color: #FF8484; }
+
+.grey {
+  color: #868686; }
+
+.greyFon {
+  background: #e0e0e0; }
+
+.z_above {
+  z-index: 100; }
+
+.logo {
+  display: grid;
+  margin: 0;
+  width: 100vw;
+  background-size: cover;
+  grid-template-areas: 'menu     menu     menu' 'maintext maintext maintext' '.    center    mouse';
+  grid-template-columns: 44vw 12vw 44vw;
+  background: url("pic/LogoR.png");
+  height: 100vh;
+  grid-template-rows: 20vh 30vh 50vh; }
+
+.logo1 {
+  display: grid;
+  margin: 0;
+  width: 100vw;
+  background-size: cover;
+  grid-template-areas: 'menu     menu     menu' 'maintext maintext maintext' '.    center    mouse';
+  grid-template-columns: 44vw 12vw 44vw;
+  background: url("pic/CityFon.png");
+  height: 80vh;
+  grid-template-rows: 20vh 30vh 30vh; }
+
+.mouse {
+  grid-area: mouse;
+  width: 10vw;
+  align-self: start;
+  margin-top: 5vh; }
+
+.left {
+  margin: 6% 5vw;
+  transition: 0.5s ease-in-out; }
+  .left:hover {
+    color: #FF8484;
+    border-bottom: 1px solid #FF8484;
+    transition: 0.5s ease-in-out;
+    cursor: pointer; }
+
+.menu {
+  grid-area: menu;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0 7vw 0 12vw;
+  justify-content: flex-end; }
+
+.menu1 {
+  grid-area: menu;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0 7vw 0 12vw;
+  justify-content: center; }
+
+.maintext {
+  grid-area: maintext;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: end;
+  white-space: nowrap; }
+
+.text1 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center; }

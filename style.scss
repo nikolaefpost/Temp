@@ -1,0 +1,115 @@
+
+$grid_rows_logo: 20vh 30vh 50vh;
+$grid_rows_logo1: 20vh 30vh 30vh;
+$rid_columns_logo:44vw 12vw 44vw;
+$transition: 0.5s ease-in-out;
+
+@mixin grid_logo{
+  display:grid;
+	margin:0;
+	width:100vw;
+  background-size:cover;
+	grid-template-areas:
+		'menu     menu     menu'
+		'maintext maintext maintext'
+		'.    center    mouse';
+    grid-template-columns:$rid_columns_logo;
+}
+
+@mixin menu_ {
+	grid-area:menu;
+	@include flex_row_
+	align-items: center;
+	margin:0 7vw 0 12vw;
+}
+
+@mixin flex_row_{
+	display:flex;
+	flex-flow: row nowrap;
+}
+
+@mixin flex_column_{
+	display:flex;
+	flex-flow: column nowrap;
+}
+
+#logpic{margin-right:auto;}
+
+
+.cntr{text-align:center;}
+
+.down{margin-bottom:2vh;}
+.five{margin-top:5%;}
+.seven{margin-top:7%;}
+.two{margin-top:2%;}
+.mrL{margin-left:15px;}
+.mrR{margin-right:15px;}
+.mrL5{margin-left:5%;}
+.mrR5{margin-right:5%;}
+.mrLtext{margin-left:.5em;}
+
+.pict{object-fit: cover; object-position: right 10%;}
+.picb{object-fit: cover; object-position: right 90%;}
+
+.white{color:white;}
+.red{color:#FF8484;}
+.grey{color:#868686;}
+.greyFon{background:#e0e0e0;}
+
+.z_above{z-index:100;}
+
+.logo{
+  @include grid_logo;
+	background: url("pic/LogoR.png");
+	height:100vh;
+	grid-template-rows:$grid_rows_logo;
+}
+
+.logo1{
+  @include grid_logo;
+	background: url("pic/CityFon.png");
+	height:80vh;
+	grid-template-rows:$grid_rows_logo1;
+}
+
+.mouse{
+	grid-area:mouse;
+	width:10vw;
+	align-self:start;
+	margin-top:5vh;
+}
+
+.left{
+	margin: 6% 5vw;
+	transition: $transition;
+  &:hover{
+  	color:#FF8484;
+  	border-bottom: 1px solid #FF8484;
+  	transition: $transition;
+  	cursor:pointer;
+  }
+}
+
+.menu {
+  @include menu_;
+  justify-content:flex-end;
+}
+.menu1{
+  @include menu_;
+  justify-content:center;
+}
+
+.maintext{
+  grid-area:maintext;
+  @include flex_row_
+	justify-content:center;
+	align-items: flex-start;
+	align-self:end;
+	white-space:nowrap;
+}
+
+.text1{
+	@include flex_column_
+	align-items: center;
+	justify-content:center;
+}
