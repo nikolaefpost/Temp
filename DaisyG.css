@@ -132,7 +132,7 @@
 .center{
 	grid-area:center;
 	justify-self:center;
-	width:12vw;
+	min-width:12vw;
 	display:flex;
 	flex-direction:column;
 	justify-content:space-between;

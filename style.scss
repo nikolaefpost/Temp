@@ -3,17 +3,27 @@ $grid_rows_logo: 20vh 30vh 50vh;
 $grid_rows_logo1: 20vh 30vh 30vh;
 $rid_columns_logo:44vw 12vw 44vw;
 $transition: 0.5s ease-in-out;
+$grid_areas:'menu     menu     menu'
+            'maintext maintext maintext'
+            '.    center    mouse';
+$grid_areas_portfolio:'menu2 menu2' auto
+                      'foto1 foto2' 20vh
+                      'foto3 foto4' 20vh
+                      'center center' auto
+                      / 50% 50%;
+
+$backgr_grey:#4f4d4d;
+$backgr_grey_fon:#e0e0e0;
+$color_red:#FF8484;
+$color_grey:#868686;
 
 @mixin grid_logo{
   display:grid;
 	margin:0;
 	width:100vw;
   background-size:cover;
-	grid-template-areas:
-		'menu     menu     menu'
-		'maintext maintext maintext'
-		'.    center    mouse';
-    grid-template-columns:$rid_columns_logo;
+	grid-template-areas:$grid_areas;
+  grid-template-columns:$rid_columns_logo;
 }
 
 @mixin menu_ {
@@ -33,7 +43,22 @@ $transition: 0.5s ease-in-out;
 	flex-flow: column nowrap;
 }
 
+@mixin font_text($size){font:$size  Geneva, Arial, Helvetica, sans-serif;}
+
+@mixin mainLand_{
+	@include flex_column_;
+	flex:40vw 0 0;
+	padding:0 2vw;
+}
+
 #logpic{margin-right:auto;}
+
+#down{
+	width:30px;
+	height:30px;
+	margin:auto auto 5vh  auto;
+}
+
 
 
 .cntr{text-align:center;}
@@ -52,15 +77,23 @@ $transition: 0.5s ease-in-out;
 .picb{object-fit: cover; object-position: right 90%;}
 
 .white{color:white;}
-.red{color:#FF8484;}
-.grey{color:#868686;}
-.greyFon{background:#e0e0e0;}
+.red{color:$color_red;}
+.grey{color:$color_grey;}
+.greyFon{background:$backgr_grey_fon;}
 
 .z_above{z-index:100;}
+
+.flex_column{@include flex_column_;}
+.flex_row{@include flex_row_;}
+.a_i_c{align-items:center;}
+.a_i_fs{align-items:flex-start;}
+.j_c_c{justify-content:center;}
+.flexend{align-items:flex-end;}
 
 .logo{
   @include grid_logo;
 	background: url("pic/LogoR.png");
+  background-size:cover;
 	height:100vh;
 	grid-template-rows:$grid_rows_logo;
 }
@@ -68,6 +101,7 @@ $transition: 0.5s ease-in-out;
 .logo1{
   @include grid_logo;
 	background: url("pic/CityFon.png");
+  background-size:cover;
 	height:80vh;
 	grid-template-rows:$grid_rows_logo1;
 }
@@ -101,15 +135,139 @@ $transition: 0.5s ease-in-out;
 
 .maintext{
   grid-area:maintext;
-  @include flex_row_
+  @include flex_row_;
 	justify-content:center;
 	align-items: flex-start;
 	align-self:end;
 	white-space:nowrap;
 }
 
+.center{
+	grid-area:center;
+  min-width:12vw;
+  @include flex_column_;
+	justify-self:center;
+	justify-content:space-between;
+	align-items:center;
+}
+
 .text1{
-	@include flex_column_
+	@include flex_column_;
 	align-items: center;
 	justify-content:center;
+}
+
+.text2S{@include font_text(1.2em);}
+
+.text15S{@include font_text(2em);}
+
+.text1S{
+  @include font_text(2.9em);
+  font-weight:600;
+}
+
+.zag{@include font_text(1.5em);}
+
+.rectangle{
+	width:9%;
+	height:.5vh;
+	background:$backgr_grey;
+	margin:2vh 1vh 3vh 1vh;
+}
+
+.redkn{
+  grid-area:redkn;
+	max-width: 20vh;
+	height:4vh;
+	border-radius:5%;
+	border:2px solid $color_red;
+	text-align:center;
+	padding:1% 3%;
+	@include font_text(2vmin);
+	align-self:start;
+	line-height:4vh;
+	white-space:nowrap;
+	margin:5vh auto 0 auto;
+}
+
+.articl1{
+	text-align:center;
+	margin-top:5%;
+}
+
+.said1{
+	margin:0 auto;
+	border-bottom: 1px solid $color_grey;
+	width:30%;
+	@include font_text(2em);
+}
+
+.said2{
+	margin:1% auto;
+	width:45%;
+	@include font_text(1em);
+}
+
+.landing{
+	@include flex_column_;
+	align-items:center;
+	padding-top:5%;
+}
+
+.mainLandRight{@include mainLand_;}
+
+.mainLandLeft{
+  @include mainLand_;
+	justify-content: center;
+}
+
+.mainLand{
+	@include flex_row_;
+	justify-content: center;
+	padding:0 5vw;
+	text-align:left;
+}
+
+.redRectY{
+	height:3.5em;
+	background:$color_red;
+	border:4px solid $color_red;
+}
+
+.redRectX{
+	background:$color_red;
+	border-radius:3px;
+	max-width:20vw;
+	text-align:center;
+	padding:1.5vmin;
+	@include font_text(1.5vmin);
+	white-space:nowrap;
+}
+
+.portfolio{
+	display:grid;
+	justify-items:stretch;
+	align-items:stretch;
+	padding-top:5%;
+	margin:0 13%;
+	grid-template:$grid_areas_portfolio;
+	grid-gap:2%;
+}
+
+.menu2{
+	grid-area:menu2;
+	@include flex_column_;
+}
+
+.foto1{grid-area:foto1;}
+.foto2{grid-area:foto2;}
+.foto3{grid-area:foto3;}
+.foto4{grid-area:foto4;}
+
+.box{
+	@include flex_row_;
+	justify-content: space-between;
+	padding:1vmin ;
+	border-bottom:1px solid $color_grey;
+	border-top:1px solid $color_grey;
 }

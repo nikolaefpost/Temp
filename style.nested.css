@@ -1,6 +1,11 @@
 #logpic {
   margin-right: auto; }
 
+#down {
+  width: 30px;
+  height: 30px;
+  margin: auto auto 5vh  auto; }
+
 .cntr {
   text-align: center; }
 
@@ -54,14 +59,35 @@
 .z_above {
   z-index: 100; }
 
+.flex_column {
+  display: flex;
+  flex-flow: column nowrap; }
+
+.flex_row {
+  display: flex;
+  flex-flow: row nowrap; }
+
+.a_i_c {
+  align-items: center; }
+
+.a_i_fs {
+  align-items: flex-start; }
+
+.j_c_c {
+  justify-content: center; }
+
+.flexend {
+  align-items: flex-end; }
+
 .logo {
   display: grid;
   margin: 0;
   width: 100vw;
   background-size: cover;
-  grid-template-areas: 'menu     menu     menu' 'maintext maintext maintext' '.    center    mouse';
+  grid-template-areas: "menu     menu     menu" "maintext maintext maintext" ".    center    mouse";
   grid-template-columns: 44vw 12vw 44vw;
   background: url("pic/LogoR.png");
+  background-size: cover;
   height: 100vh;
   grid-template-rows: 20vh 30vh 50vh; }
 
@@ -70,9 +96,10 @@
   margin: 0;
   width: 100vw;
   background-size: cover;
-  grid-template-areas: 'menu     menu     menu' 'maintext maintext maintext' '.    center    mouse';
+  grid-template-areas: "menu     menu     menu" "maintext maintext maintext" ".    center    mouse";
   grid-template-columns: 44vw 12vw 44vw;
   background: url("pic/CityFon.png");
+  background-size: cover;
   height: 80vh;
   grid-template-rows: 20vh 30vh 30vh; }
 
@@ -116,8 +143,139 @@
   align-self: end;
   white-space: nowrap; }
 
+.center {
+  grid-area: center;
+  min-width: 12vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-self: center;
+  justify-content: space-between;
+  align-items: center; }
+
 .text1 {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center; }
+
+.text2S {
+  font: 1.2em Geneva, Arial, Helvetica, sans-serif; }
+
+.text15S {
+  font: 2em Geneva, Arial, Helvetica, sans-serif; }
+
+.text1S {
+  font: 2.9em Geneva, Arial, Helvetica, sans-serif;
+  font-weight: 600; }
+
+.zag {
+  font: 1.5em Geneva, Arial, Helvetica, sans-serif; }
+
+.rectangle {
+  width: 9%;
+  height: .5vh;
+  background: #4f4d4d;
+  margin: 2vh 1vh 3vh 1vh; }
+
+.redkn {
+  grid-area: redkn;
+  max-width: 20vh;
+  height: 4vh;
+  border-radius: 5%;
+  border: 2px solid #FF8484;
+  text-align: center;
+  padding: 1% 3%;
+  font: 2vmin Geneva, Arial, Helvetica, sans-serif;
+  align-self: start;
+  line-height: 4vh;
+  white-space: nowrap;
+  margin: 5vh auto 0 auto; }
+
+.articl1 {
+  text-align: center;
+  margin-top: 5%; }
+
+.said1 {
+  margin: 0 auto;
+  border-bottom: 1px solid #868686;
+  width: 30%;
+  font: 2em Geneva, Arial, Helvetica, sans-serif; }
+
+.said2 {
+  margin: 1% auto;
+  width: 45%;
+  font: 1em Geneva, Arial, Helvetica, sans-serif; }
+
+.landing {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-top: 5%; }
+
+.mainLandRight {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 40vw 0 0;
+  padding: 0 2vw; }
+
+.mainLandLeft {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 40vw 0 0;
+  padding: 0 2vw;
+  justify-content: center; }
+
+.mainLand {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 0 5vw;
+  text-align: left; }
+
+.redRectY {
+  height: 3.5em;
+  background: #FF8484;
+  border: 4px solid #FF8484; }
+
+.redRectX {
+  background: #FF8484;
+  border-radius: 3px;
+  max-width: 20vw;
+  text-align: center;
+  padding: 1.5vmin;
+  font: 1.5vmin Geneva, Arial, Helvetica, sans-serif;
+  white-space: nowrap; }
+
+.portfolio {
+  display: grid;
+  justify-items: stretch;
+  align-items: stretch;
+  padding-top: 5%;
+  margin: 0 13%;
+  grid-template: "menu2 menu2" auto "foto1 foto2" 20vh "foto3 foto4" 20vh "center center" auto/50% 50%;
+  grid-gap: 2%; }
+
+.menu2 {
+  grid-area: menu2;
+  display: flex;
+  flex-flow: column nowrap; }
+
+.foto1 {
+  grid-area: foto1; }
+
+.foto2 {
+  grid-area: foto2; }
+
+.foto3 {
+  grid-area: foto3; }
+
+.foto4 {
+  grid-area: foto4; }
+
+.box {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 1vmin;
+  border-bottom: 1px solid #868686;
+  border-top: 1px solid #868686; }
