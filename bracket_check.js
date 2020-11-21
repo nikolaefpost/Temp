@@ -39,3 +39,25 @@
       return false;
     }
   }
+
+  function sameNumbers() {         																					// работает с любыми символами
+    const userNumber = prompt("Введите любое число:", "1232323");
+    nuberArea1.innerHTML= 'В числе: '+ userNumber;
+    var arrayOfStrings = userNumber.split('');
+    var m=i=j=k=0;
+    while (j>=0 &&  i < arrayOfStrings.length) {
+      j =	arrayOfStrings.indexOf(arrayOfStrings[i], (j+1));
+      if (arrayOfStrings[i] && j>=0) {
+        arrayOfStrings[j]=undefined;
+        k++;
+      }
+      if	(j==-1 && k>0)  {
+        nuberArea1.innerHTML+= ', число '+ arrayOfStrings[i] + ' повторяется ' + k +' раз(а)';
+        m++; k=0;
+      }
+      if (j<0){
+        i++;  j=i;
+      }
+    }
+    if (m<=0) nuberArea1.innerHTML+= ', числа не повторяются.';
+  }
