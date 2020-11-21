@@ -108,41 +108,40 @@
 }
 
 .text1S{
-	font:2.9em  Geneva, Arial, Helvetica, sans-serif;
+	font:2.9em  Geneva, Arial, Helvetica, sans-serif;  /*s*/
 	font-weight:600;
 }
 
 .text15S{
-	font:2em  Geneva, Arial, Helvetica, sans-serif;
+	font:2em  Geneva, Arial, Helvetica, sans-serif;  /*s*/
 
 }
 
 .text2S{
-	font:1.2em  Geneva, Arial, Helvetica, sans-serif;
-
+	font:1.2em  Geneva, Arial, Helvetica, sans-serif;  /*s*/
 }
 
 .rectangle{
 	width:9%;
 	height:.5vh;
 	background:#4f4d4d;
-	margin:2vh 1vh 3vh 1vh;
+	margin:2vh 1vh 3vh 1vh;                             /*s*/
 }
 
 .center{
 	grid-area:center;
 	justify-self:center;
-	min-width:12vw;
+	width:12vw;
 	display:flex;
 	flex-direction:column;
 	justify-content:space-between;
-	align-items:center;
+	align-items:center;                              /*s*/
 }
 
 #down{
 	width:30px;
 	height:30px;
-	margin:auto auto 5vh  auto;
+	margin:auto auto 5vh  auto;                      /*s*/
 }
 .redkn{
 
@@ -157,47 +156,46 @@
 	align-self:start;
 	line-height:4vh;
 	white-space:nowrap;
-	margin:5vh auto 0 auto;
+	margin:5vh auto 0 auto;                            /*s*/
 }
 
 .articl1{
 	text-align:center;
-	margin-top:5%;
+	margin-top:5%;                                    /*s*/
 }
 
 .said1{
 	margin:0 auto;
 	border-bottom: 1px solid #868686;
 	width:30%;
-	font:2em  Geneva, Arial, Helvetica, sans-serif;
+	font:2em  Geneva, Arial, Helvetica, sans-serif;             /*s*/
 }
 
 .flex_row{
 	display:flex;
-	flex-flow: row nowrap;
+	flex-flow: row nowrap;                                    /*s*/
 }
 
-.flex_column{
+.flex_column{                                                 /*s*/
 	display:flex;
 	flex-flow: column nowrap;
 }
 
 .a_i_c{align-items:center;}
 .a_i_fs{align-items:flex-start;}
+.j_c_c{justify-content:center;}                         /*s*/
 
-.j_c_c{justify-content:center;}
 
 
-.fontZag{font:2em  Geneva, Arial, Helvetica, sans-serif;}
 
 .said2{
 	margin:1% auto;
 	width:45%;
-	font:1em  Geneva, Arial, Helvetica, sans-serif;
+	font:1em  Geneva, Arial, Helvetica, sans-serif;          /*s*/
 }
 
 .zag{
-	font:1.5em  Geneva, Arial, Helvetica, sans-serif;
+	font:1.5em  Geneva, Arial, Helvetica, sans-serif;  /*s*/
 }
 
 
@@ -205,10 +203,10 @@
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-	padding-top:5%;
+	padding-top:5%;                              /*s*/
 }
 
-.greyFon{background:#e0e0e0;}
+
 
 
 
@@ -216,27 +214,27 @@
 	display:flex;
 	flex-direction:column;
 	flex:40vw 0 0;
-	padding:0 2vw;
+	padding:0 2vw;                                    /*s*/
 }
 
 .mainLandLeft{
-	justify-content: center;
+	justify-content: center;                       /*s*/
 }
 
-.flexend{align-items:flex-end;}
+.flexend{align-items:flex-end;}             /*s*/
 
 .mainLand{
 	display:flex;
 	flex-flow:row nowrap;
 	justify-content: center;
 	padding:0 5vw;
-	text-align:left;
+	text-align:left;                          /*s*/
 }
 
 .redRectY{
 	height:3.5em;
 	background:#FF8484;
-	border:4px solid #FF8484;
+	border:4px solid #FF8484;                 /*s*/
 }
 
 .redRectX{
@@ -245,7 +243,7 @@
 	max-width:20vw;
 	text-align:center;
 	padding:1.5vmin;
-	font:1.5vmin normal  Geneva, Arial, Helvetica, sans-serif;
+	font:1.5vmin normal  Geneva, Arial, Helvetica, sans-serif; /*s*/
 	white-space:nowrap;
 }
 
@@ -261,14 +259,14 @@
 		'foto3 foto4' 20vh
 		'center center' auto
 		/ 50% 50%;
-		grid-gap:2%;
+		grid-gap:2%;                                          /*s*/
 
 }
 
 .menu2{
 	grid-area:menu2;
 	display:flex;
-	flex-direction:column;
+	flex-direction:column;                                   /*s*/
 }
 
 .foto1{grid-area:foto1;}
