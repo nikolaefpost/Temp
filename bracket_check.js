@@ -167,6 +167,30 @@
       }
     }
     if (errPosition){
-      nuberArea0.innerHTML='<span style="color:red;">ERROR</span>'+'<span><br>'+ newString.slice(0, errPosition)+'<span style="color:red;">' +newString[errPosition] + '</span>'+newString.slice(errPosition+1, newString.length)+'</span>';}
+      nuberArea0.innerHTML='<span style="color:red;">ERROR</span>'+'<span><br>'+ newString.slice(0, errPosition)+'<span style="color:red;">' +newString[errPosition] + '</span>'+newString.slice(errPosition+1, newString.length)+'</span>';
+    }
       else nuberArea0.innerHTML='Строка прошла проверку!!!'
-}
+  }
+
+  var arr=[];
+  function searchClass(node) {
+    var nodes = node.childNodes;
+    for (var i = 0; i <nodes.length; i++){
+      if((nodes[i].className=='divFlex')) arr.push(nodes[i]);
+      else {
+        if(nodes[i].childNodes.length > 0){
+          searchClass(nodes[i]);
+        }
+      }
+    }
+    return arr;
+  }
+
+  function innerClass(node) {
+    var inn='';
+    arr = searchClass(node);
+    for (var i = 0; i <arr.length; i++) {
+      inn += arr[i]+'-'+arr[i].className+'<br> ';
+    }
+    nuberArea1.innerHTML=inn;
+  }
