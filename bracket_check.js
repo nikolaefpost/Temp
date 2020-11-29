@@ -151,25 +151,22 @@
     }
   }
 
-function test4() {
-  let  arr = [], errPosition;
-  let newString = prompt('введите строку на проверку','var list = function (e) {var self = this;var first, last, head;self.insert = function [(value]) {var node = new Node(value);if (first == null) {first = last = node;} else {var head = first;while (head.next != null) {head = head.next;}head.next = node;last = head.next;}}}');
-  for( let i=0; i<newString.length ; i++){
-    if( !((newString[i]=='(') || (newString[i]=='{') || (newString[i]=='[') || (newString[i]==')') || (newString[i]=='}') || (newString[i]==']'))) continue;
-    if( (newString[i]=='(') || (newString[i]=='{') || (newString[i]=='[')) {arr.push(newString[i]); console.log(arr,errPosition);}
-    else {
-      if ((newString[i]==')') && (arr[arr.length-1]=='(') ) {arr.pop();console.log(arr,errPosition); continue;}
-      if ((newString[i]==')') && !(arr[arr.length-1]=='(') )  {errPosition=i; console.log(arr,errPosition); break;}
-      if ((newString[i]=='}') && (arr[arr.length-1]=='{') ) {arr.pop();continue;}
-      if ((newString[i]=='}') && !(arr[arr.length-1]=='{') ) {errPosition=i; console.log(arr,errPosition); break;}
-      if ((newString[i]==']') && (arr[arr.length-1]=='[') ) {arr.pop();continue;}
-      if ((newString[i]==']') && !(arr[arr.length-1]=='[') ) {errPosition=i; console.log(arr,errPosition); break;}
-      console.log(arr+' '+i+' '+newString[i]);
+  function test4() {
+    let  arr = [], errPosition;
+    let newString = prompt('введите строку на проверку','var list = function (e) {var self = this;var first, last, head;self.insert = function [(value]) {var node = new Node(value);if (first == null) {first = last = node;} else {var head = first;while (head.next != null) {head = head.next;}head.next = node;last = head.next;}}}');
+    for( let i=0; i<newString.length ; i++){
+      if( !((newString[i]=='(') || (newString[i]=='{') || (newString[i]=='[') || (newString[i]==')') || (newString[i]=='}') || (newString[i]==']'))) continue;
+      if( (newString[i]=='(') || (newString[i]=='{') || (newString[i]=='[')) {arr.push(newString[i]);}
+      else {
+        if ((newString[i]==')') && (arr[arr.length-1]=='(') ) {arr.pop(); continue;}
+        if ((newString[i]==')') && !(arr[arr.length-1]=='(') )  {errPosition=i; break;}
+        if ((newString[i]=='}') && (arr[arr.length-1]=='{') ) {arr.pop(); continue;}
+        if ((newString[i]=='}') && !(arr[arr.length-1]=='{') ) {errPosition=i; break;}
+        if ((newString[i]==']') && (arr[arr.length-1]=='[') ) {arr.pop();continue;}
+        if ((newString[i]==']') && !(arr[arr.length-1]=='[') ) {errPosition=i;  break;}
+      }
     }
-
-  }
-  console.log(arr,errPosition,newString.length);
-  if (errPosition){
-    nuberArea0.innerHTML='<span style="color:red;">ERROR</span>'+'<span><br>'+ newString.slice(0, errPosition)+'<span style="color:red;">' +newString[errPosition] + '</span>'+newString.slice(errPosition+1, newString.length)+'</span>';}
-  else nuberArea0.innerHTML='Строка прошла проверку!!!'
+    if (errPosition){
+      nuberArea0.innerHTML='<span style="color:red;">ERROR</span>'+'<span><br>'+ newString.slice(0, errPosition)+'<span style="color:red;">' +newString[errPosition] + '</span>'+newString.slice(errPosition+1, newString.length)+'</span>';}
+      else nuberArea0.innerHTML='Строка прошла проверку!!!'
 }
